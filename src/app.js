@@ -22,7 +22,7 @@ class CommentBox extends React.Component {
     return(
       <div className="row comments-container">
         <div className="cell">
-          <h2>Sign Up Now</h2>
+          <h2>Subscribe Now</h2>
           <div className="comment-box">
             <CommentForm addComment={this._addComment.bind(this)} />
             <CommentAvatarList avatars={this._getAvatars()} />
@@ -127,7 +127,7 @@ class CommentForm extends React.Component {
         <p>{this.state.characters} characters</p>
         <div className="comment-form-actions">
           <button type="submit">
-            Post comment
+            Submit
           </button>
         </div>
       </form>

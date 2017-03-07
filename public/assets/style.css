@@ -1,9 +1,3 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -13,21 +7,10 @@ html {
   /* 2 */
 }
 
-/**
- * Remove default margin.
- */
 body {
   margin: 0;
 }
 
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11
- * and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
 article,
 aside,
 details,
@@ -44,33 +27,19 @@ summary {
   display: block;
 }
 
-/**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
 audio,
 canvas,
 progress,
 video {
   display: inline-block;
-  /* 1 */
   vertical-align: baseline;
-  /* 2 */
 }
 
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
- */
 [hidden],
 template {
   display: none;
@@ -102,9 +71,6 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
 b,
 strong {
   font-weight: bold;
@@ -531,7 +497,7 @@ p {
 }
 
 .comment-button {
-  background-color: #45686D;
+  background-color: white;
   border: none;
   border-radius: 4px;
   color: white;
@@ -546,7 +512,7 @@ p {
 }
 
 .comment-button:active {
-  background-color: #5C8288;
+  background-color: green;
 }
 
 .comment-list {
@@ -561,7 +527,7 @@ p {
 }
 
 .comment-form {
-  background-color: #9ecbd2;
+  background-color: #1c2b5d;
   border-radius: 10px;
   margin-bottom: 40px;
   padding: 20px;
@@ -569,7 +535,6 @@ p {
 }
 
 .comment-form::before {
-  background: url("images/illo-gears.svg") center no-repeat;
   content: '';
   height: 80px;
   position: absolute;
@@ -579,10 +544,10 @@ p {
 }
 
 .comment-form-actions > button {
-  background-color: #fce87c;
+  background-color: white;
   border: 0;
   border-radius: 10px;
-  color: #6ba2aa;
+  color: black;
   display: inline-block;
   font-weight: 700;
   line-height: 3;
@@ -598,7 +563,7 @@ p {
 }
 
 .comment-form > label {
-  color: #6ba2aa;
+  color: white;
   display: block;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -617,7 +582,7 @@ p {
 }
 
 .row {
-  background-color: #6ba2aa;
+  background-color: #8eb8e8;
   overflow: hidden;
   padding-bottom: 40px;
   padding-top: 40px;
