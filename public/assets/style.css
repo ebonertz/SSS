@@ -460,7 +460,7 @@ p {
 }
 
 .comment-actions {
-  color: #9ecbd2;
+  color: #1c2b5d;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -471,7 +471,7 @@ p {
 }
 
 .comment-actions a {
-  color: #9ecbd2;
+  color: #1c2b5d;
   text-decoration: underline;
   transition: 0.2s ease-in-out;
 }
@@ -492,7 +492,7 @@ p {
 }
 
 .comment-count {
-  color: #9ecbd2;
+  color: #1c2b5d;
   margin-bottom: 20px;
 }
 
@@ -604,7 +604,7 @@ p {
 }
 
 .comment-avatars > h4 {
-  color: #9ecbd2;
+  color: #1c2b5d;
   text-transform: uppercase;
 }
 
