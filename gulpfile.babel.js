@@ -10,6 +10,7 @@ import babelify from 'babelify';
 import uglify from 'gulp-uglify';
 import ifElse from 'gulp-if-else';
 
+
 watchify.args.debug = true;
 
 const sync = browserSync.create();
@@ -39,7 +40,7 @@ function bundle() {
     .pipe(gulp.dest('public/assets/js'));
 }
 
-gulp.task('default', ['transpile']);
+gulp.task('default', ['transpile','serve']);
 
 gulp.task('transpile', ['lint'], () => bundle());
 

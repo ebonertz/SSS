@@ -2,6 +2,47 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import jQuery from 'jquery';
 
+import { createClient } from '@commercetools/sdk-client';
+import { createAuthMiddlewareForClientCredentialsFlow } from '@commercetools/sdk-middleware-auth';
+import { createHttpMiddleware } from '@commercetools/sdk-middleware-http';
+
+// import { createQueueMiddleware } from '@commercetools/sdk-middleware-queue'
+// import { createUserAgentMiddleware } from '@commercetools/sdk-middleware-user-agent'
+// import { createRequestBuilder } from '@commercetools/api-request-builder'
+// import { createSyncProducts } from '@commercetools/sync-actions'
+
+const client = createClient({
+  // The order of the middlewares is important !!!
+  middlewares: [
+    createAuthMiddlewareForClientCredentialsFlow({
+      host: 'https://auth.sphere.io',
+      projectKey: 'down-under',
+      credentials: {
+        clientId: 'mKPAWp0Yy2-CMnXTGCykFbqr',
+        clientSecret: 'DjItbv4ZQvMiSQG5PqWOQCL9uTGh4pSZ',
+      },
+    }),
+      createHttpMiddleware({ host: 'https://api.sphere.io' }),
+  ],
+});
+
+const request = {
+  uri:'/down-under/products?token=GSy9xD4iy41w1wPOR2LiHNlgbwJQG8I5',
+  method: 'GET',
+  headers: {Authorization: 'Bearer GSy9xD4iy41w1wPOR2LiHNlgbwJQG8I5'},
+}
+console.log("got here");
+
+client.execute(request)
+      .then(function successCallback(response){
+        let products = response;
+        console.log(products);
+      }
+
+);
+
+
+
 class CommentBox extends React.Component {
 
   constructor() {
