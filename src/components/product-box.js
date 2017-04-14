@@ -22,9 +22,10 @@ export default class ProductBox extends React.Component {
   }
 
   _getProducts() {
-    return this.state.comments.map((products) => {
-      return <Products
-               name={products.name.en} />
+    return this.state.product.map((product) => {
+      return <Product
+              {...product}
+              name={products.name.en} />
               //  id={comment.id}
               //  author={comment.author}
               //  body={comment.body}
