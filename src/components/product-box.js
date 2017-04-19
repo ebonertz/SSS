@@ -1,3 +1,6 @@
+import React from 'react';
+import jQuery from 'jquery';
+
 export default class ProductBox extends React.Component {
 
   constructor() {
@@ -24,14 +27,11 @@ export default class ProductBox extends React.Component {
   _getProducts() {
     return this.state.product.map((product) => {
       return <Product
-              {...product}
-              name={products.name.en} />
-              //  id={comment.id}
-              //  author={comment.author}
-              //  body={comment.body}
-              //  avatarUrl={comment.avatarUrl}
-              //  onDelete={this._deleteComment.bind(this)}
-              //  key={comment.id} />
+              {...product} />
+              //  name={product.name.en}
+              //  id={product.id}
+              //  description={product.description}
+              //  body={product.body}
     });
   }
 
