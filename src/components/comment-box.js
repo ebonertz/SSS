@@ -23,7 +23,7 @@ export default class CommentBox extends React.Component {
     return(
       <div className="row comments-container">
         <div className="cell">
-          <h2>Subscribe Now</h2>
+          <h2>Discuss </h2>
           <div className="comment-box">
             <CommentForm addComment={this._addComment} />
             <CommentAvatarList avatars={this._getAvatars()} />

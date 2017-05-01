@@ -47,12 +47,6 @@ template {
 
 /* Links
    ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
@@ -92,24 +86,10 @@ h1 {
   margin: 0.67em 0;
 }
 
-/**
- * Address styling not present in IE 8/9.
- */
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
 small {
   font-size: 80%;
 }
 
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
 sub,
 sup {
   font-size: 75%;
@@ -382,7 +362,7 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: black;
   font-size: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -444,6 +424,14 @@ p {
 .cell {
   margin: 0 auto;
   max-width: 800px;
+}
+
+.product {
+
+}
+
+.product-container h2 {
+  text-align: center;
 }
 
 .comment {
