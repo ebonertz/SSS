@@ -12,16 +12,16 @@ import BlogPage from './pages/blog'
 import PicturePage from './pages/picture'
 import VideoPage from './pages/video'
 
-const app = (
-  <Router history={hashHistory}>
-    <Redirect from="/" to="/blog" />
-    <Route path="/" component={Layout}>
-      <Route path="blog" component={BlogPage} />
-      <Route path="picture" component={PicturePage} />
-      <Route path="video" component={VideoPage} />
-    </Route>
-  </Router>
-)
+// const app = (
+//   <Router history={hashHistory}>
+//     <Redirect from="/" to="/blog" />
+//     <Route path="/" component={Layout}>
+//       <Route path="blog" component={BlogPage} />
+//       <Route path="picture" component={PicturePage} />
+//       <Route path="video" component={VideoPage} />
+//     </Route>
+//   </Router>
+// )
 
 jQuery(function() {
   ReactDOM.render(
