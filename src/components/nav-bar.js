@@ -1,11 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router';
 
-export default class Layout extends React.Component {
+export default class NavBar extends React.Component {
+
+  constructor() {
+    super();
+
+    this.state = {
+      description: []
+    };
+  }
+
   render() {
     return (
-      <div>
-        <div className="top-menu">
+      <div> Any
+        <div className="menu">
           <ul>
             <li>
               <Link to="/blog">Blog</Link>
@@ -18,7 +26,6 @@ export default class Layout extends React.Component {
             </li>
           </ul>
         </div>
-
         {this.props.children}
       </div>
     )
