@@ -370,11 +370,18 @@ p {
   max-width: 800px;
 }
 
-.product {
+.products-container {
+  height: 200px;
+  max-width: 500px;
+  border: 1px solid black;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 10%;
 
 }
 
-.product-container h2 {
+.product-title {
+  color: #555;
   text-align: center;
 }
 
@@ -408,8 +415,6 @@ p {
   transition: 0.2s ease-in-out;
 }
 
-/*.comment-actions a:active,
-.comment-actions > a:focus,*/
 .comment-actions > a:hover {
   color: #fff;
 }
