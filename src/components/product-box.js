@@ -27,7 +27,12 @@ export default class ProductBox extends React.Component {
     const products = this._getProducts();
     return(
       <div className="products-container">
-        <h2 className="product-title"> The Gems </h2>
+        <h7 className="product-title"> Why stay here? </h7>
+        <ol>
+          <li>Great Location</li>
+          <li>Newly renovated interior</li>
+          <li>Efficient and Eco Friendly</li>
+        </ol>
         <div> {products} </div>
       </div>
     )
