@@ -35,3 +35,10 @@ jQuery(function() {
     document.getElementById('product-box')
   );
 })
+
+jQuery(function() {
+  ReactDOM.render(
+    <NavBar />,
+    document.getElementById('nav-bar')
+  );
+})

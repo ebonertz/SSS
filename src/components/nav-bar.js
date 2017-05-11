@@ -1,4 +1,5 @@
 import React from 'react';
+import{hashHistory, Router, Route, Redirect, Link} from 'react-router';
 
 export default class NavBar extends React.Component {
 
@@ -12,8 +13,8 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <div> Any
-        <div className="menu">
+      <div>
+        <div className="top-menu">
           <ul>
             <li>
               <Link to="/blog">Blog</Link>
