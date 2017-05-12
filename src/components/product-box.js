@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { createClient } from '@commercetools/sdk-client';
 import { createAuthMiddlewareForClientCredentialsFlow } from '@commercetools/sdk-middleware-auth';
 import { createHttpMiddleware } from '@commercetools/sdk-middleware-http';
@@ -8,7 +8,7 @@ import { createHttpMiddleware } from '@commercetools/sdk-middleware-http';
 // import { createRequestBuilder } from '@commercetools/api-request-builder'
 // import { createSyncProducts } from '@commercetools/sync-actions'
 
-export default class ProductBox extends React.Component {
+export default class ProductBox extends Component {
 
   constructor() {
     super();

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import{hashHistory, Router, Route, Redirect, Link} from 'react-router';
 
-export default class NavBar extends React.Component {
+export default class NavBar extends Component {
 
   constructor() {
     super();

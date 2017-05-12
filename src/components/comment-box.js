@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import jQuery from 'jquery';
 
-export default class CommentBox extends React.Component {
+export default class CommentBox extends Component {
 
   constructor() {
     super();

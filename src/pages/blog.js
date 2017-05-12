@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 import CommentBox from '../components/comment-box';
 import ProductBox from '../components/product-box';
 
-export default class BlogPage extends React.Component {
+export default class BlogPage extends Component {
   render() {
     return (
       <div>
