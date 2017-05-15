@@ -4,7 +4,9 @@ import jQuery from 'jquery';
 import CommentBox from './components/comment-box.js'
 import ProductBox from './components/product-box.js'
 import NavBar from'./components/nav-bar.js'
+// import Carousel from './components/carousel.js'
 
+import { Button, Alert, Carousel } from 'react-bootstrap';
 import{hashHistory, Router, Route, Redirect} from 'react-router';
 
 import BlogPage from './pages/blog'
@@ -40,5 +42,12 @@ jQuery(function() {
   ReactDOM.render(
     <NavBar />,
     document.getElementById('nav-bar')
+  );
+})
+
+jQuery(function() {
+  ReactDOM.render(
+    <Carousel />,
+    document.getElementById('carousel')
   );
 })
