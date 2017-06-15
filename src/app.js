@@ -4,7 +4,7 @@ import jQuery from 'jquery';
 import CommentBox from './components/comment-box.js'
 import ProductBox from './components/product-box.js'
 import NavBar from'./components/nav-bar.js'
-// import Carousel from './components/carousel.js'
+import Gallery from './components/gallery.js'
 
 import { Button, Alert, Carousel } from 'react-bootstrap';
 import{hashHistory, Router, Route, Redirect} from 'react-router';
@@ -26,8 +26,8 @@ import VideoPage from './pages/video'
 
 jQuery(function() {
   ReactDOM.render(
-    <CommentBox />,
-    document.getElementById('comment-box')
+    <NavBar />,
+    document.getElementById('nav-bar')
   );
 })
 
@@ -40,14 +40,14 @@ jQuery(function() {
 
 jQuery(function() {
   ReactDOM.render(
-    <NavBar />,
-    document.getElementById('nav-bar')
+    <Gallery />,
+    document.getElementById('carousel')
   );
 })
 
 jQuery(function() {
   ReactDOM.render(
-    <Carousel />,
-    document.getElementById('carousel')
+    <CommentBox />,
+    document.getElementById('comment-box')
   );
 })

@@ -27,11 +27,15 @@ export default class ProductBox extends Component {
     const products = this._getProducts();
     return(
       <div className="products-container">
-        <h7 className="product-title"> Why stay here? </h7>
+        <h7 className="product-title"> Improvements and Features </h7>
         <ol>
-          <li>Great Location</li>
-          <li>Newly renovated interior</li>
-          <li>Efficient and Eco Friendly</li>
+          <li> Carpet in both bedrooms replaced</li>
+          <li> Led lighting in both bedrooms </li>
+          <li> New granite countertops </li>
+          <li> New faucets and sinks in kitchen and bathrooms </li>
+          <li> Stacked washer and dryer </li>
+          <li> Tankless water heater </li>
+          
         </ol>
         <div> {products} </div>
       </div>
