@@ -4,7 +4,7 @@ import jQuery from 'jquery';
 import CommentBox from './components/comment-box.js'
 import ProductBox from './components/product-box.js'
 import NavBar from'./components/nav-bar.js'
-import Gallery from './components/gallery.js'
+//import Gallery from './components/gallery.js'
 
 import { Button, Alert, Carousel } from 'react-bootstrap';
 import{hashHistory, Router, Route, Redirect} from 'react-router';
@@ -24,30 +24,19 @@ import VideoPage from './pages/video'
 //   </Router>
 // )
 
-jQuery(function() {
-  ReactDOM.render(
-    <NavBar />,
-    document.getElementById('nav-bar')
-  );
-})
+ReactDOM.render(
+  <NavBar />,
+  document.getElementById('nav-bar')
+);
 
-jQuery(function() {
-  ReactDOM.render(
-    <ProductBox />,
-    document.getElementById('product-box')
-  );
-})
+ReactDOM.render(
+  <CommentBox />,
+  document.getElementById('comment-box')
+);
 
-jQuery(function() {
-  ReactDOM.render(
-    <Gallery />,
-    document.getElementById('carousel')
-  );
-})
-
-jQuery(function() {
-  ReactDOM.render(
-    <CommentBox />,
-    document.getElementById('comment-box')
-  );
-})
+/*
+ReactDOM.render(
+  <Gallery />,
+  document.getElementById('carousel')
+);
+*/
