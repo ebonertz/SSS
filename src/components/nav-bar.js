@@ -1,34 +1,67 @@
 import React, {Component} from 'react';
-import{hashHistory, Router, Route, Redirect, Link} from 'react-router';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 
-export default class NavBar extends Component {
+import Home from '../components/home.js'
 
-  constructor() {
-    super();
+const About = () => (
+  <div>
+    <h2>About</h2>
+  </div>
+)
 
-    this.state = {
-      description: []
-    };
-  }
+const Topic = ({ match }) => (
+  <div>
+    <h3>{match.params.topicId}</h3>
+  </div>
+)
 
-  render() {
-    return (
-      <div>
-        <div className="top-menu">
-          <ul>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link to="/picture">Picture</Link>
-            </li>
-            <li>
-              <Link to="/video">Video</Link>
-            </li>
-          </ul>
-        </div>
-        {this.props.children}
-      </div>
-    )
-  }
-}
+const Topics = ({ match }) => (
+  <div>
+    <h2>Topics</h2>
+    <ul>
+      <li>
+        <Link to={`${match.url}/location`}>
+          Location
+        </Link>
+      </li>
+      <li>
+        <Link to={`${match.url}/specs`}>
+          Specs
+        </Link>
+      </li>
+      <li>
+        <Link to={`${match.url}/improvements`}>
+          Improvements
+        </Link>
+      </li>
+    </ul>
+
+    <Route path={`${match.url}/:topicId`} component={Topic}/>
+    <Route exact path={match.url} render={() => (
+      <h3>Please select a topic.</h3>
+    )}/>
+  </div>
+)
+
+const NavBar = () => (
+  <Router>
+    <div className="top-menu" >
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/topics">Topics</Link></li>
+      </ul>
+
+      <hr/>
+
+      <Route exact path="/" component={Home}/>
+      <Route path="/about" component={About}/>
+      <Route path="/topics" component={Topics}/>
+    </div>
+  </Router>
+)
+export default NavBar

@@ -7,12 +7,8 @@ export default class Home extends Component {
     return (
       <div>
         <h2>Home</h2>
-        <img src="https://a0.muscache.com/im/pictures/15443339/4df2e054_original.jpg?aki_policy=large" width="300px" align="middle" border="2px"/>
+        <img src="https://a0.muscache.com/im/pictures/15443339/4df2e054_original.jpg?aki_policy=large" width="300px"/>
       </div>
-      // <div>
-      //   <ProductBox />
-      //   <CommentBox apiUrl="api/blog/comments.json" />
-      // </div>
     )
   }
 }

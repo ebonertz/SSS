@@ -7,27 +7,22 @@ import NavBar from'./components/nav-bar.js'
 //import Gallery from './components/gallery.js'
 
 import { Button, Alert, Carousel } from 'react-bootstrap';
-import{hashHistory, Router, Route, Redirect} from 'react-router';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 
 import BlogPage from './pages/blog'
 import PicturePage from './pages/picture'
 import VideoPage from './pages/video'
 
-// const routes = (
-//   <Router history={hashHistory}>
-//     <Redirect from="/" to="/blog" />
-//     <Route path="/" component={NavBar}>
-//       <Route path="blog" component={BlogPage} />
-//       <Route path="picture" component={PicturePage} />
-//       <Route path="video" component={VideoPage} />
-//     </Route>
-//   </Router>
-// )
 
 ReactDOM.render(
   <NavBar />,
   document.getElementById('nav-bar')
 );
+
 
 ReactDOM.render(
   <CommentBox />,
