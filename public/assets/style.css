@@ -54,28 +54,9 @@ a:hover {
 
 /* Text-level semantics
    ========================================================================== */
-/**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
- */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari and Chrome.
- */
-dfn {
-  font-style: italic;
-}
 
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
  */
 h1 {
   font-size: 2em;
@@ -100,15 +81,6 @@ sup {
 
 sub {
   bottom: -0.25em;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
 }
 
 /**
@@ -366,6 +338,7 @@ p {
 }
 
 .cell {
+  padding-top: 250px;
   margin: 0 auto;
   max-width: 800px;
 }
@@ -607,4 +580,14 @@ p {
 
 .top-menu > ul > li a:hover {
   text-decoration: underline;
+}
+
+.home-container {
+  text-align:center;
+  padding-right: auto;
+  width: 100%;
+}
+
+.home-container > img {
+  border: 2px solid black;
 }

@@ -40,7 +40,7 @@ function bundle() {
     .pipe(gulp.dest('public/assets/js'));
 }
 
-gulp.task('default', ['transpile','serve']);
+gulp.task('default', ['transpile','serve','watch']);
 
 gulp.task('transpile', ['lint'], () => bundle());
 

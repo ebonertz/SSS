@@ -6,12 +6,7 @@ import {
 } from 'react-router-dom';
 
 import Home from '../components/home.js'
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-)
+import About from '../components/about.js'
 
 const Topic = ({ match }) => (
   <div>
